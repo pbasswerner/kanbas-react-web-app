@@ -1,6 +1,7 @@
-import { Link } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 import "../styles.css";
 export default function CoursesNavigation() {
+    const { cid } = useParams();
     return (
         <div id="wd-courses-navigation" className="wd list group fs-5 rounded-0">
             <Link id="wd-course-home-link" to="/Kanbas/Courses/1234/Home" className="list-group-item active border border-0">
@@ -26,9 +27,8 @@ export default function CoursesNavigation() {
             <Link id="wd-course-grades-link" to="/Kanbas/Courses/1234/Grades" className="list-group-item active border border-0">
                 Grades
             </Link>
-            <Link id="wd-course-people-link" to="/Kanbas/People" className="list-group-item active border border-0">
-                People
-            </Link>
+            <Link to={`/Kanbas/Courses/${cid}/People`}>People</Link>
+
         </div>
     );
 }
