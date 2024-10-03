@@ -52,3 +52,7 @@ body * {
     color: black;
     background-color: white;
 }
+
+.wd-outline {
+    border-color: black;
+}
