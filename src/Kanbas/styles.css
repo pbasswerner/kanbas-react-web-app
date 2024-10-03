@@ -37,3 +37,18 @@ body * {
 .wd-lesson {
     border-left: 3px solid green !important;
 }
+
+.wd-assignment-icon {
+    margin-right: 15px;
+    size: 20px;
+}
+
+.wd-padding {
+    padding: 20px;
+}
+
+.wd-title {
+    font-weight: bold;
+    color: black;
+    background-color: white;
+}
