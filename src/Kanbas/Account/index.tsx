@@ -5,7 +5,7 @@ import Signin from "./Signin";
 import Signup from "./Signup";
 export default function Account() {
     return (
-        <div id="wd-account-screen">
+        <div id="wd-account-screen" className="wd-padding">
             <table>
                 <tr>
                     <td valign="top">
